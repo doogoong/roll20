@@ -13,6 +13,16 @@ on("chat:message", function(msg)
 if (msg.type == "api"){
 	// on.chat:message:api
 	
+    if (msg.content.indexOf("!예시 ") === 0) {
+        const style = "color:#8a006a;";
+        try {
+            let chat_id = "예시";
+            sendChat(chat_id,"<span style='" + style + "'>"+msg.content.substring(3, msg.content.length)+"</span>",null,{noarchive:false});
+        } catch (err) {
+			sendChat('error','/w GM '+err,null,{noarchive:true});
+        }
+    } //단순히 NPC 대사 색을 바꾸는 코드입니다. NPC 대사색 복붙은 이걸로.
+    
 	 if (msg.content.indexOf("!회상 ") === 0) {
         const style = "text-decoration:none; font-weight: normal; font-size: 100%; font-style: normal; color: #000000; background: #D1D1D1; text-align:left; display:block; line-height:1.3; padding:8px 25px 8px 60px; margin: -20px -20px -2px -20px; word-break:keep-all;";
         try {
@@ -32,16 +42,6 @@ if (msg.type == "api"){
 			sendChat('error','/w GM '+err,null,{noarchive:true});
         }
     } //말풍선이 붙는 코드
-    
-    if (msg.content.indexOf("!예시 ") === 0) {
-        const style = "color:#8a006a;";
-        try {
-            let chat_id = "예시";
-            sendChat(chat_id,"<span style='" + style + "'>"+msg.content.substring(3, msg.content.length)+"</span>",null,{noarchive:false});
-        } catch (err) {
-			sendChat('error','/w GM '+err,null,{noarchive:true});
-        }
-    } //단순히 NPC 대사 색을 바꾸는 코드입니다. NPC 대사색 복붙은 이걸로.
     
 	// /on.chat:message:api
 }
