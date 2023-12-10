@@ -17,7 +17,7 @@ if (msg.type == "api"){
         } catch (err) {
 			sendChat('error','/w GM '+err,null,{noarchive:true});
         }
-    }
+    } //회상 코드. 타래로 서술합니다. 
     
     if (msg.content.indexOf("!블루 ") === 0) {
         const style = "color:white; background: #3478F6; border-radius: 15px 15px 15px 0px; padding: 8px; display: inline-block; line-height:1.3; box-shadow: 1px 1px 1px 1px #97A9B9; text-align:left; text-decoration:none; margin: 0px 0px 3px 0px; word-break:keep-all;";
@@ -27,81 +27,18 @@ if (msg.type == "api"){
         } catch (err) {
 			sendChat('error','/w GM '+err,null,{noarchive:true});
         }
-    }
+    } //말풍선이 붙는 코드
     
-    if (msg.content.indexOf("!필립 ") === 0) {
+    if (msg.content.indexOf("!예시 ") === 0) {
         const style = "color:#8a006a;";
         try {
-            let chat_id = "필립 스미스";
+            let chat_id = "예시";
             sendChat(chat_id,"<span style='" + style + "'>"+msg.content.substring(3, msg.content.length)+"</span>",null,{noarchive:false});
         } catch (err) {
 			sendChat('error','/w GM '+err,null,{noarchive:true});
         }
-    }
+    } //단순히 NPC 대사 색을 바꾸는 코드입니다. NPC 대사색 복붙은 이걸로.
     
-    if (msg.content.indexOf("!나레 ") === 0) {
-        
-        try {
-            let chat_id = " ";
-            sendChat(chat_id,msg.content.substring(3, msg.content.length),null,{noarchive:false});
-        } catch (err) {
-			sendChat('error','/w GM '+err,null,{noarchive:true});
-        }
-    }
-    
-    
-if (msg.content.indexOf("!에바 ") === 0) {
-        const style = "color:#001aff;";
-        try {
-            let chat_id = "에바 래티머";
-            sendChat(chat_id,"<span style='" + style + "'>"+msg.content.substring(3, msg.content.length)+"</span>",null,{noarchive:false});
-        } catch (err) {
-			sendChat('error','/w GM '+err,null,{noarchive:true});
-        }
-    }
-    
-    if (msg.content.indexOf("!워든 ") === 0) {
-        const style = "color:#85677e;";
-        try {
-            let chat_id = "워든 체이스";
-            sendChat(chat_id,"<span style='" + style + "'>"+msg.content.substring(3, msg.content.length)+"</span>",null,{noarchive:false});
-        } catch (err) {
-			sendChat('error','/w GM '+err,null,{noarchive:true});
-        }
-    }
-    
-
-    if (msg.content.indexOf("!모니 ") === 0) {
-        const style = "color:#34A0AE;";
-        try {
-            let chat_id = "모니카 수아레즈";
-            sendChat(chat_id,"<span style='" + style + "'>"+msg.content.substring(3, msg.content.length)+"</span>",null,{noarchive:false});
-        } catch (err) {
-			sendChat('error','/w GM '+err,null,{noarchive:true});
-        }
-    }
-    
-    
-
-    if (msg.content.indexOf("!앰버 ") === 0) {
-        const style = "color:#ed4902;";
-        try {
-            let chat_id = "앰버 도쉬";
-            sendChat(chat_id,"<span style='" + style + "'>"+msg.content.substring(3, msg.content.length)+"</span>",null,{noarchive:false});
-        } catch (err) {
-			sendChat('error','/w GM '+err,null,{noarchive:true});
-        }
-    }
-    
-    if (msg.content.indexOf("!제리 ") === 0) {
-        const style = "color:#d18b00;";
-        try {
-            let chat_id = "제러미 최";
-            sendChat(chat_id,"<span style='" + style + "'>"+msg.content.substring(3, msg.content.length)+"</span>",null,{noarchive:false});
-        } catch (err) {
-			sendChat('error','/w GM '+err,null,{noarchive:true});
-        }
-    }
 	// /on.chat:message:api
 }
 });
