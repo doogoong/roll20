@@ -2,6 +2,10 @@
 /* (smallchat.js) 210306 코드 시작 */
 /* 양천일염님 배포 코드를 따로 수정한 버전입니다. */
 /* 재배포!! 하지 말아주세요!!!!!!!! 원본이 있는 코드니까!!!! */
+/* 코드 설명 타래 https://twitter.com/DGcommu/status/1733722690148851943 */
+
+
+
 // define: option
 
 on("chat:message", function(msg)
