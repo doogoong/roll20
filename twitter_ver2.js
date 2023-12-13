@@ -9,6 +9,8 @@
 /* 코드 설명 타래 https://twitter.com/DGcommu/status/1734903250447671354 */
 /* (smallchat_twitter.js) 220913 코드 시작 */
 
+
+
 on('ready', function() {
     if (!state.smallchatlog) state.smallchatlog = [];
     if (!state.smallchatonair) state.smallchatonair = [];
