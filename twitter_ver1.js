@@ -64,18 +64,6 @@ if (msg.type == "api"){
         
 
        let content_str = msg.content.substring(2); 
-       var res=content_str.match(/"해골"/);
-        var res2=content_str.match(/"100"/);
-         var res3=content_str.match(/"죽"/);
-       if (res) {
-           content_str = "[ ](https://i.imgur.com/k0WlrYB.png)"
-       }
-       if (res2){
-            content_str = "[ ](https://i.imgur.com/eMdWruL.png)"
-       }
-       if (res3){
-            content_str = "[ ](https://i.imgur.com/D6zhhK1.png)"
-       }
 
         
 var res_img = content_str.match(/\[.+\]\(http.+\)/g);
